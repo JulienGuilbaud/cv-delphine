@@ -1,0 +1,108 @@
+@use './var.scss' as var;
+.cv-info {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  
+    .column {
+      width: 57%;
+      position: relative;
+  
+      &:first-child {
+        width: 35%;
+        padding-right: 7%;
+  
+        &:after {
+          content: '';
+          width: 0.1rem;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: #373737;
+        }
+  
+        .block {
+          span {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            font-size: 1em;
+  
+            ion-icon {
+              padding: 0.5rem 0.625rem 0.5rem 0;
+              font-size: 2em;
+              color:var.$couleur-secondaire;
+          
+            }
+  
+            a {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              align-items: center;
+              color: var.$couleur-text;
+              text-decoration: none;
+            }
+          }
+  
+        }
+      }
+  
+      .block {
+        margin-bottom: 2.5rem;
+  
+        .item {
+          margin-bottom: 2rem;
+  
+          span {
+            display: block;
+            font-size: 1em;
+            margin-bottom: 0.1rem;
+            font-weight: 500;
+  
+            &.font-bold {
+              font-size: 1em;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  
+    h2 {
+      color: var.$couleur-secondaire;
+      font-size: 2em;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+  
+      svg {
+        display: none;
+      }
+    }
+  
+    p {
+      font-size: 1em;
+    }
+    .qrcode{
+      margin-left: -0.5rem;
+
+       width: 10rem; 
+     
+    }
+    .onlyprint{
+      display: none;
+    }
+  }

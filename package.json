@@ -1,0 +1,16 @@
+{
+  "name": "cv-delphine",
+  "source": "src/index.html",
+  "type": "module",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    
+  }
+}

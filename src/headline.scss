@@ -1,0 +1,35 @@
+.cv-headline {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 85%;
+    justify-content: space-between;
+  
+    img {
+      border-radius: 50%;
+      border: 0.5rem solid #fff;
+      margin-bottom: 2.5rem;
+      max-width: 13rem;
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 3em;
+      font-weight: 600;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+    }
+  
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1em;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.25rem;
+    }
+  }

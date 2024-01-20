@@ -1,0 +1,51 @@
+@use './var.scss' as var;
+.cv-main {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0.5rem 0.5rem 15rem 0.5rem;
+    position: relative;
+    overflow: hidden;
+  
+    .cv-bg {
+      &:before,
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 9rem 0 9rem 45rem;
+        position: absolute;
+        z-index: 1;
+      }
+  
+      &:before {
+        border-color: transparent transparent transparent var.$couleur-secondaire;
+        top: -5rem;
+        left: 0;
+      }
+  
+      &:after {
+        border-color: transparent transparent transparent var.$couleur-principale;
+        transform: rotate(180deg);
+        top: -12rem;
+        left: unset;
+        right: -3rem;
+      }
+  
+      &.footer {
+        transform: rotate(180deg);
+  
+        &:before {
+          top: unset;
+          bottom: 3.5rem;
+          left: -1.8rem;
+        }
+  
+        &:after {
+          top: unset;
+          bottom: 10rem;
+          right: -5rem;
+        }
+      }
+    }
+  }

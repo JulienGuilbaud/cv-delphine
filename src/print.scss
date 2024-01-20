@@ -1,0 +1,27 @@
+@use './var.scss' as var;
+@media print {
+  .cv{
+    margin: -1rem;
+    padding: -1rem;
+    font-size: 0.8em;
+  }
+  .cv-headline{
+   margin-bottom: -7rem;
+  }
+
+   
+    .cv-info .column .block .item {
+      margin-bottom: 0.5rem;
+  }
+  .cv-info p {
+    
+    margin: 0;
+}
+
+.cv-info .onlyprint{
+  display: contents;
+}
+button{
+  display: none;
+}  
+}
